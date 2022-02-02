@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Chart.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="Chart.min.js"></script>
+    <script src="script.js" defer></script>
+    <title>Администратор</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <!-- ПОЛЬЗОВАТЕЛЬ -->
+        <div class="header__person">
+            <img src="avatar.jpg" alt="Аватар" class="header__avatar">
+            <h2 class="header__name">Наталья Ивановна Романова</h2>
+            <h3 class="header__position">Администратор</h3>
+        </div>
+        <!-- НАВИГАЦИЯ -->
+        <nav class="header__navigation">
+            <a href="https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D1%82%D0%B0%D1%88%D0%B0_%D0%A0%D0%BE%D0%BC%D0%B0%D0%BD%D0%BE%D1%84%D1%84_(%D0%9A%D0%B8%D0%BD%D0%B5%D0%BC%D0%B0%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%B2%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_Marvel)" class="header__link" target="_blank" rel="nofollow noopener noreferrer">Личная информация</a>
+            <a href="#statistics" class="header__link">Статистика</a>
+            <a href="#" class="header__link">Избранное</a>
+            <a href="#" class="header__link">Уведомления</a>
+        </nav>
+    </header>
+    
+    <!-- MAIN -->
+    <div class="page">
+        <div class="main">
+            <!-- ГРАФИКИ -->
+            <div class="main__chart-list">
+                <div class="main__chart">
+                    <canvas id="lineChart"></canvas>
+                </div>
+                <div class="main__chart">
+                    <canvas id="oilChart"></canvas>
+                </div>
+                <div class="main__chart">
+                <canvas id="marksChart"></canvas>
+                </div>
+                <div class="main__chart">
+                    <canvas id="barChart"></canvas>
+                </div>
+                <div class="main__chart">
+                    <canvas id="popChart"></canvas>
+                </div>
+            </div>
+        </div>
+  
+       
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <h3 class="sidebar__title" id="statistics">Cтатистика</h3>
+          <nav class="sidebar__navigation">
+              <a href="#lineChart" class="sidebar__link">По месяцам</a>
+              <a href="#oilChart" class="sidebar__link">По времени года</a>
+              <a href="#marksChart" class="sidebar__link">По полу и возрасту</a>
+              <a href="#barChart" class="sidebar__link">По городам</a>
+              <a href="#popChart" class="sidebar__link">По возврату</a>
+          </nav>
+        </aside>
+      </div>
+</body>
+</html>
